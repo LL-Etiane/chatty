@@ -1,0 +1,29 @@
+version: '3'
+services:
+  nginx:
+    ports:
+      - "3000:80"
+    
+  chatty:
+    build:
+      context: . 
+      args: 
+        NODE_ENV: development
+    volumes:
+      - "./:/app"
+      - "/app/node_modules"
+    environment:
+      - NODE_ENV=development
+      - MONGO_USER=etiane 
+      - MONGO_PASSWORD=etiane
+    
+    depends_on:
+      - mongo
+
+    command: npm run dev
+
+  mongo:
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: etiane
+        MONGO_INITDB_ROOT_PASSWORD: etiane
+      
