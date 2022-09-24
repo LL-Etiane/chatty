@@ -21,10 +21,6 @@ async function dbConnect(){
 
 dbConnect().catch(err => console.log(err))
 
-app.get('/api/v1',(req,res)=>{
-    res.send("<h1>OKay</h1>")
-})
-
 app.use("/api/v1/",accountRouter)
 app.use("/api/v1/posts", postRouter)
 
