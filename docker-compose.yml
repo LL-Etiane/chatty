@@ -6,7 +6,9 @@ services:
       - "./nginx/default.conf:/etc/nginx/conf.d/default.conf"
 
   chatty: 
-    build: . 
+    build: 
+      context: .
+      dockerfile: ./api/Dockerfile
     environment:
       - PORT=3000
 

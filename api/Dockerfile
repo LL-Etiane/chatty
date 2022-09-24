@@ -1,6 +1,6 @@
 FROM node:16-alpine
 WORKDIR /app 
-ADD package.json .
+ADD ./api/package.json .
 ARG NODE_ENV
 RUN if [ "$NODE_ENV" = "development" ]; \
     then npm install; \
