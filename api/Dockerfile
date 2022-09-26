@@ -9,4 +9,4 @@ RUN if [ "$NODE_ENV" = "development" ]; \
 ADD . ./ 
 ENV PORT 3000
 EXPOSE $PORT
-CMD ["node","app.js"]  
+CMD ["node","app.js"] 
