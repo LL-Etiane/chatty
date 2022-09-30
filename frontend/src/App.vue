@@ -1,14 +1,15 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import NavBarComponent from './components/NavBarComponent.vue'
 </script>
 
 <template>
-  <header>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-  </header>
+  <div class="bg-secondary h-screen">
+    <header class="bg-white">
+      <NavBarComponent />
+    </header>
 
   <RouterView />
+  </div>
 </template>
 
