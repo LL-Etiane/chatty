@@ -9,7 +9,9 @@ import NavBarComponent from './components/NavBarComponent.vue'
       <NavBarComponent />
     </header>
 
-  <RouterView />
+  <div class="container mx-auto">
+    <RouterView />
+  </div>
   </div>
 </template>
 
