@@ -15,6 +15,7 @@
                     <input type="password" name="password" id="password" class="w-full">
                 </div>
                 <input type="submit" value="Login" class="bg-primary p-2 my-2 rounded-sm text-white font-bold">
+                <p>Don't yet have an account? <RouterLink to="/register" class="text-primary">Create one</RouterLink></p>
             </form>
         </div>
     </main>

@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router'
           <RouterLink to="/">
             About
           </RouterLink>
-          <RouterLink to="/">
+          <RouterLink to="/login">
             <font-awesome-icon icon="fa-solid fa-user" />
             Account
           </RouterLink>
